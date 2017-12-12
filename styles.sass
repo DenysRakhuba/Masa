@@ -22,7 +22,7 @@ a
 	height: auto
 
 .button
-  font-size: 13px
+  font-size: 0.8rem
   font-weight: 300
   background: #e84545
   border-radius: 3px
@@ -55,10 +55,11 @@ header, section
       margin: 0 auto
       padding: 20px 0
       ul
+        padding: 0
         li
           display: inline-block
           margin-left: 30px
-          font-size: 13px
+          font-size: 0.8rem
           font-weight: bold
           color: #cbccd2
           text-transform: uppercase
@@ -74,12 +75,12 @@ header, section
       margin: 0 auto
       h1
         font-family: $opensans
-        font-size: 65px
+        font-size: 4rem
         text-transform: uppercase
         margin-bottom: 0
         line-height: 1.1
       p
-        font-size: 22px
+        font-size: 1.3rem
         font-weight: 300
 
 .features
@@ -99,11 +100,11 @@ header, section
     width: 33.3%
     margin: 20px 0
     h4
-      font-size: 14px
+      font-size: 0.8rem
       font-weight: bold
       text-transform: uppercase
     p
-      font-size: 14px
+      font-size: 0.8rem
       color: #93989d
       padding: 0 30px
 
@@ -111,14 +112,6 @@ header, section
   height: auto
   display: grid
   grid-template-columns: 25% 25% 25% 25%
-  // height: auto
-  // display: flex
-  // flex-wrap: wrap
-  // justify-content: center
-  // align-content: center
-  // .img-block
-  //   flex: 0 0 calc(25% - 2px)
-  //   margin: 1px
 
 .footer
   background-color: #3a3e64
@@ -130,7 +123,7 @@ header, section
     text-align: center
     padding: 30px 0
     h4
-      font-size: 14px
+      font-size: 0.8rem
       font-weight: 600
       color: #fff
       text-transform: uppercase
@@ -169,3 +162,61 @@ header, section
       color: red
     .name
       color: #fff
+
+
+@media (max-width: 1200px)
+  .header
+    .inner-wrapper
+      .intro
+        h1
+          font-size: 3rem
+
+@media (max-width: 992px)
+  .header
+    .inner-wrapper
+      .intro
+        h1
+          font-size: 2.5rem
+  .banners
+    grid-template-columns: 50% 50%
+
+@media (max-width: 768px)
+    .header
+      .inner-wrapper
+        .intro
+          h1
+            font-size: 1.5rem
+          p
+            font-size: 1rem
+    .features
+      height: auto
+      .box
+        width: 50%
+    .footer
+      .prefooter
+        flex-direction: column
+        .location
+          max-width: 100%
+        .share
+          max-width: 100%
+        .about
+          max-width: 100%
+
+@media (max-width: 480px)
+    .features
+      height: auto
+      .box
+        width: 100%
+    .banners
+      grid-template-columns: 100%
+
+@media (max-width: 320px)
+  .header
+    .inner-wrapper
+      max-width: 100%
+      .navigation
+        position: relative
+        max-width: 90%
+      .intro
+        justify-content: flex-start
+        margin-top: 20px
