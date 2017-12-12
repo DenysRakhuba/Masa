@@ -108,10 +108,64 @@ header, section
       padding: 0 30px
 
 .banners
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-  align-content: center
-  .img-block
-    flex: 0 0 calc(25% - 2px)
-    margin: 1px
+  height: auto
+  display: grid
+  grid-template-columns: 25% 25% 25% 25%
+  // height: auto
+  // display: flex
+  // flex-wrap: wrap
+  // justify-content: center
+  // align-content: center
+  // .img-block
+  //   flex: 0 0 calc(25% - 2px)
+  //   margin: 1px
+
+.footer
+  background-color: #3a3e64
+  .prefooter
+    display: flex
+    flex-direction: row
+    max-width: 70%
+    margin: 0 auto
+    text-align: center
+    padding: 30px 0
+    h4
+      font-size: 14px
+      font-weight: 600
+      color: #fff
+      text-transform: uppercase
+    p
+      color: #9d9fb2
+    .location
+      max-width: 33%
+      flex-grow: 1
+      p
+        margin: 0
+    .share
+      max-width: 33%
+      flex-grow: 1
+      ul
+        padding: 0
+        li
+          display: inline-block
+          i
+            color: #fff
+            border: 2px solid #fff
+            padding: 10px
+            &.fa-facebook
+              padding: 10px 12px
+
+    .about
+      max-width: 33%
+      flex-grow: 1
+  .copyright
+    background: #313454
+    text-align: center
+    padding: 20px 0
+    color: #808080
+    p
+      margin: 0
+    .heart
+      color: red
+    .name
+      color: #fff
